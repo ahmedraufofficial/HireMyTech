@@ -19,7 +19,7 @@ const DisplayMessages = (props) => {
             props.handleMessage();
         }}>
         <Grid sx={{position: 'fixed', bottom: 0, marginBottom: 2}} container rowSpacing={1}>
-            <Grid item xs={10}><TextField sx={{minWidth: "100%"}} variant="outlined" label='message' value={props.message} onChange={e => props.setMessage(e.target.value)} /></Grid>
+            <Grid item xs={6} md={6}><TextField sx={{minWidth: "100%"}} variant="outlined" label='message' value={props.message} onChange={e => props.setMessage(e.target.value)} /></Grid>
             <Grid item xs={2}><Button  sx={{marginLeft: 2, padding: 2}} variant="contained" type="submit">Send</Button></Grid>
         </Grid>
         </form>
